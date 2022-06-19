@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/studentsFragment">
+
+    <fragment
+        android:id="@+id/studentRegistryFragment"
+        android:name="com.tutorial.myapplication.ui.student.StudentRegistryFragment"
+        android:label="@string/student_registry_fragment_label"
+        tools:layout="@layout/fragment_student_registry"/>
+    <fragment
+        android:id="@+id/studentsFragment"
+        android:name="com.tutorial.myapplication.ui.student.StudentsFragment"
+        android:label="@string/student_fragment_label"
+        tools:layout="@layout/fragment_students">
+        <action
+            android:id="@+id/action_studentsFragment_to_studentRegistryFragment"
+            app:destination="@id/studentRegistryFragment" />
+        <action
+            android:id="@+id/action_studentsFragment_to_studentEditFragment"
+            app:destination="@id/studentEditFragment">
+            <argument android:name="studentId"
+                app:argType="integer"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/studentEditFragment"
+        android:name="com.tutorial.myapplication.ui.student.StudentEditFragment"
+        android:label="@string/student_edit_fragment_label"
+        tools:layout="@layout/fragment_student_edit">
+        <argument
+            android:name="studentId"
+            app:argType="integer"/>
+    </fragment>
+</navigation>

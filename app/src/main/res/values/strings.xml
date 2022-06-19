@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tutorial Application</string>
+
+    <string name="name_hint">Name</string>
+    <string name="semester_hint">Semester</string>
+    <string name="nationality_hint">Nationality</string>
+    <string name="semester_item_text">semester:</string>
+
+    <string name="button_text">Save</string>
+    <string name="button_edit_text">Update</string>
+
+    <string name="student_registry_fragment_label">Student Registry</string>
+    <string name="student_fragment_label">Students</string>
+    <string name="student_edit_fragment_label">Edit Student</string>
+
+    <string name="name_input_error_message">Enter a name</string>
+    <string name="semester_input_error_message">Enter the semester number you\'re in</string>
+    <string name="semester_input_error_message_2">Value need to be at least one</string>
+    <string name="nationality_input_error_message">Select a nationality</string>
+
+    <string name="student_registry_save_message">Saved</string>
+    <string name="student_registry_failed_save_message">Cannot save</string>
+    <string name="student_edit_update_message">Updated</string>
+    <string name="student_edit_failed_update_message">Cannot update</string>
+
+    <string name="options_dialog_edit">Edit</string>
+    <string name="options_dialog_delete">Delete</string>
+    <string name="options_dialog_title">Select option</string>
+</resources>
